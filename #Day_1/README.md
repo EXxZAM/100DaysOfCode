@@ -3,7 +3,8 @@
 # # Day 1
 📝
 First Day of the 100 Day of code challange
-
+In day 1 i made a simple calculator based on terminal!
+wanted to start the challenge slow and get to hard stuff next days!
 
 
 
