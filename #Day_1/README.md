@@ -1,21 +1,13 @@
 
 
-# Wiki-App
+# # Day 1
 📝
-With Wiki-App you can find articles about anything you want! just enter the name and the app tells you the awnser!
-
-## Needed Packages 
-
-🐍
-```bash
-pip install pyttsx3
-pip install tk
-pip install wikipedia
-pip install winsound
-```
+First Day of the 100 Day of code challange
 
 
-## Made By ❤
+
+
+## Creator
 👨‍💻 This python project is made by Seyed Mahdi Olamaei aka exxzam
 
 
@@ -27,6 +19,7 @@ pip install winsound
 
 🔗 [t.me/exxzam](https://t.me/exxzam)
 
+🔗 [Twitter](https://twitter.com/MahdiPython)
 
 
 ## Website
