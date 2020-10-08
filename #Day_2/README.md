@@ -4,7 +4,7 @@
 📝
 Second Day of the 100 Day of code challange
 
-In day 2 i made a BMI calculator using python!
+In day 2 i made a BMI calculator App and a IP Finder App using python!
 
 
 
