@@ -1,10 +1,10 @@
 
 
-# # Day 5
+# # Day 6
 📝
-Day 5 of the 100 Day of code challange
+Day 6 of the 100 Day of code challange
 
-In day 5 i made a Instagram tool GUI using python!
+In day 6 i made a Chat bot GUI using python!
 
 
 
