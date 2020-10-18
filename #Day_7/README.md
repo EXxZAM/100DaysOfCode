@@ -1,10 +1,10 @@
 
 
-# # Day 6
+# # Day 7
 📝
-Day 6 of the 100 Day of code challange
+Day 7 of the 100 Day of code challange
 
-In day 6 i made a Chat bot GUI using python!
+In day 7 i made a QR Code Maker GUI using python!
 
 
 
