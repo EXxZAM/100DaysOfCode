@@ -15,40 +15,50 @@ def send_msg():
     check_awnsers(message)
 
 def check_awnsers(msg):
+    
     greet = ['سلام',]
     conv = ['چطوری', 'خوبی']
     convo_awnsers_pos = ['خوبم','حالم خوبه','بد نیستم' ]
     convo_awnsers_neg = ["حالم خوش نیست", "حالم خوب نیست", "حالم بده", "ناراحتم",]
     awnser = ''
+    audio_file = ''
     for item in greet:
         if item in msg:
             awnser = 'سلام! من آرمان هستم'
+            audio_file = r'F:\#100DaysOfCode\#Day_6\1.wav'
     
     for item in conv:
         if item in msg:
             awnser = "من عالیم! شما چطورید"
+            audio_file = r'F:\#100DaysOfCode\#Day_6\2.wav'
     
     for item in convo_awnsers_pos:
         if item in msg:
             awnser = 'از خوشحالیتون خوشحالم'
+            audio_file = r'F:\#100DaysOfCode\#Day_6\3.wav'
     
     for item in convo_awnsers_neg:
         if item in msg:
             awnser = "ای بابا! خدا کنه به زودی حالت بهتر شه"
+            audio_file = r'F:\#100DaysOfCode\#Day_6\4.wav'
     
     if awnser == '':
         awnser = "متاسفم! ولی متوجه نشدم چی گفتی"
+        audio_file = r'F:\#100DaysOfCode\#Day_6\5.wav'
         
     if 'اسمت چیه' in msg:
         awnser = 'من آرمان هستم'
+        audio_file = r'F:\#100DaysOfCode\#Day_6\6.wav'
     if 'چیکار بلدی انجام بدی' in msg:
         awnser = 'من میتونم براتون نوشته ذخیره کنم! یا براتون توی اینترنت سرچ کنم! خوبه نه؟'
-    awnser_to_user(awnser)
+        audio_file = r'F:\#100DaysOfCode\#Day_6\7.wav'
+    awnser_to_user(awnser,audio_file)
 
-def awnser_to_user(return_msg):
+def awnser_to_user(return_msg,audio):
 
     out_label.config(text=return_msg)
     question_entry.delete(0,END)
+    winsound.PlaySound(audio,winsound.SND_ASYNC)
     
 # Defining the layout
 # Defining the two frames (input,output)
@@ -68,7 +78,7 @@ send_button.grid(row=1,column=0,padx=10,pady=10,sticky='we')
 quit_button.grid(row=3,column=0,padx=10,pady=10,sticky='we')
 
 # Defining the output frame 
-out_label = Label(output_frame, text='How can i help you?', bg='#121212', fg='white',wraplength=200,)
+out_label = Label(output_frame, text='چطور میتونم کمکتون کنم', bg='#121212', fg='white',wraplength=200,)
 
 out_label.place(relx=0.5, rely=0.5, anchor='c')
 # Calling the main window's main loop 
